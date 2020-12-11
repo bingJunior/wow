@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="30dp"
+    android:layout_height="match_parent"
+    tools:context=".assign_login">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/et_email"
+        android:hint="email"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/et_password"
+        android:hint="password"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </EditText>
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_gravity="center"
+         android:id="@+id/login"
+         android:text="Login"
+         android:layout_height="wrap_content">
+     </Button>
+<TextView
+    android:layout_margin="20dp"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:text="Go to Signup Page"
+    android:id="@+id/go_signup"
+    android:layout_height="wrap_content">
+</TextView>
+</LinearLayout>

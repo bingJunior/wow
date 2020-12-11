@@ -1,4 +1,14 @@
 package com.bingjunior.myapplication;
 
-public class assign_home {
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class assign_home extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_assign_home);
+    }
 }

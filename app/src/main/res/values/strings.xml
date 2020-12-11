@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Crimnal Alert</string>
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password (at least 8 charachter)</string>
+    <string name="register_confirm_password_hint">Confirm Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_worry_about_password">Do not worry we just need your registered email address and its done!</string>
+    <string name="provide_email_address">Provide your register email Address here</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="chek_inbox">Check your inbox after cliking the button above.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+</resources>
