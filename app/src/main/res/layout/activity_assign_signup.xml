@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".assign_signup">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/common_signin_button_text"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:hint="enter name"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </EditText>
+    <EditText
+        android:id="@+id/etphone"
+        android:layout_width="match_parent"
+        android:hint="enter phone"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </EditText>
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:hint="enter email"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </EditText>
+    <EditText
+        android:id="@+id/etaddress"
+        android:layout_width="match_parent"
+        android:hint="enter address"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </EditText>
+    <EditText
+        android:id="@+id/etpasswrd"
+        android:layout_width="match_parent"
+        android:hint="enter password"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    </EditText>
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="wrap_content"
+        android:text="@string/common_signin_button_text"
+        android:layout_height="wrap_content">
+    </Button>
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:text="Go to Login Page"
+        android:id="@+id/go_login"
+        android:layout_height="wrap_content">
+    </TextView>
+    <Button
+        android:id="@+id/btnread"
+        android:layout_width="wrap_content"
+        android:text="read"
+        android:layout_height="wrap_content">
+    </Button>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recycler"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
