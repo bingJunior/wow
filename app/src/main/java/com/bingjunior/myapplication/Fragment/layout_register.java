@@ -24,9 +24,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.bingjunior.myapplication.MainActivity;
-import com.bingjunior.myapplication.Modal.UserDatabaseHelper;
-import com.bingjunior.myapplication.R;
+import com.bingjunior.myapplication.Fragment.layout_login;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -34,7 +32,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
-
+import com.bingjunior.myapplication.MainActivity;
+import com.bingjunior.myapplication.Modal.UserDatabaseHelper;
+import com.bingjunior.myapplication.R;
 
 public class layout_register extends Fragment {
     View view;
@@ -71,8 +71,8 @@ public class layout_register extends Fragment {
         alredyHaveAnAccount=view.findViewById(R.id.tv_already_have_an_account);
         progressBar_register=view.findViewById(R.id.progressid);
         frameLayout=getActivity().findViewById(R.id.mainframeid);
-        firebaseAuth= FirebaseAuth.getInstance();
-        firebaseFirestore= FirebaseFirestore.getInstance();
+        firebaseAuth=FirebaseAuth.getInstance();
+        firebaseFirestore=FirebaseFirestore.getInstance();
 
          database = FirebaseDatabase.getInstance();
 
@@ -85,7 +85,7 @@ public class layout_register extends Fragment {
         alredyHaveAnAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-              setFragment(new com.bingjunior.myapplication.Fragment.layout_login());
+              setFragment(new layout_login());
             }
         });
         email.addTextChangedListener(new TextWatcher() {
@@ -186,7 +186,7 @@ public class layout_register extends Fragment {
     }
 
 
-    private void setFragment(com.bingjunior.myapplication.Fragment.layout_login layout_login) {
+    private void setFragment(layout_login layout_login) {
 
         FragmentTransaction fragmentTransaction=getActivity().getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(frameLayout.getId(),layout_login);
@@ -254,13 +254,11 @@ public class layout_register extends Fragment {
                                             UserDatabaseHelper userDatabaseHelper=new UserDatabaseHelper(NAME,MOBILENUMBER,EMAIL,PASSWORD);
                                             //generate unique key
                                             String uniqueKey = reference.child("UserData").push().getKey();
-                                            reference.child(uniqueKey).setValue(userDatabaseHelper);
+                                            reference.child(MOBILENUMBER).setValue(userDatabaseHelper);
 
-                                           MainIntent();
+//                                           MainIntent();
 
-
-
-
+                                            setFragment(new layout_login());
 
                                         }else{
                                             progressBar_register.setVisibility(view.INVISIBLE);
@@ -285,6 +283,10 @@ public class layout_register extends Fragment {
                     email.setError("Invalid Email !!!!",erroricon);
             }
     }
+
+    private void gologin() {
+    }
+
     private  void MainIntent(){
         Intent intent=new Intent(getActivity(), MainActivity.class);
         startActivity(intent);

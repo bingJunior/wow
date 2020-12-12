@@ -15,10 +15,15 @@
     <color name="orange">#F56920</color>
 
     <!--color fot toolbar-->
-    <color name="background">#000</color>
+<!--    <color name="background">#000</color>-->
+    <color name="background">#F8F5F5</color>
     <color name="color_desire_front">#96979b</color>
     <color name="color_desire_font">#96979b</color>
 
 
-    <color name="toolbar_color">#3c4043</color>
+<!--    <color name="toolbar_color">#3c4043</color>-->
+    <color name="toolbar_color">#F8F5F5</color>
+    <!-- dots color-->
+    <color name="activedot">#96979b</color>
+    <color name="inactivedots">#00A5FF</color>
 </resources>

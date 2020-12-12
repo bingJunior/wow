@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bingjunior.myapplication.R;
 import com.google.android.material.textfield.TextInputEditText;
 
 public class assign_Mainactivity extends AppCompatActivity {

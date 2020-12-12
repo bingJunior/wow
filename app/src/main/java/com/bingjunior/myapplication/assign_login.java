@@ -1,5 +1,9 @@
 package com.bingjunior.myapplication;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.DownloadManager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,14 +13,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.bingjunior.myapplication.R;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
+import java.util.Iterator;
 
 public class assign_login extends AppCompatActivity {
     EditText email, password;
@@ -39,7 +45,7 @@ public class assign_login extends AppCompatActivity {
         gosignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(com.student.crimnalalert.assign_login.this, com.student.crimnalalert.assign_signup.class);
+                Intent intent = new Intent(assign_login.this, com.bingjunior.myapplication.assign_signup.class);
                 startActivity(intent);
                 finish();
             }
@@ -68,14 +74,14 @@ public class assign_login extends AppCompatActivity {
 
                                 if(email.getText().toString().equals(emailfromdb)&&password.getText().toString().equals(passwordfromdb)){
                                     Log.e("yess ","yess");
-                                    Toast.makeText(com.student.crimnalalert.assign_login.this, "Sucessfully", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(assign_login.this, "Sucessfully", Toast.LENGTH_SHORT).show();
                                 }
                                 else{
                                     Log.e("email",""+emailfromdb);
                                     Log.e("password",""+passwordfromdb);
 
                                     Log.e("No ","No");
-                                    Toast.makeText(com.student.crimnalalert.assign_login.this, "try again", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(assign_login.this, "try again", Toast.LENGTH_SHORT).show();
                                 }
                             }
                             @Override

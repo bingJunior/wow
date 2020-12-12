@@ -1,5 +1,13 @@
-<resources>
-    <string name="app_name">Crimnal Alert</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">FIRMS</string>
+    <string name="change">Change</string>
+    <string name="email_id">email id</string>
+    <string name="mobilenumber">mobile number </string>
+    <string name="personal_information">Personal Information </string>
+    personal_information
+    <string name="personal_enter_these_information_in_english">personal enter these information in english </string>
+
+
     <string name="register">REGISTER</string>
     <string name="login_email_hint">Email</string>
     <string name="login_password_hint">Password (at least 8 charachter)</string>
@@ -11,15 +19,140 @@
     <string name="provide_email_address">Provide your register email Address here</string>
     <string name="reset_password">Reset Password</string>
     <string name="chek_inbox">Check your inbox after cliking the button above.</string>
+
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Not Signed In</string>
+    <string name="nav_header_subtitle">Email address</string>
     <string name="nav_header_desc">Navigation header</string>
+
     <string name="action_settings">Settings</string>
 
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+
+    <string name="fir">FIR</string>
+    <string name="ncr">NCR</string>
+    <string name="zerofir">ZERO FIR</string>
+
+    <string name="criminalrate">Criminal Rate</string>
+    <string name="feedback">Feedback</string>
+    <string name="settingAndPrivacy">Settings and Privacy</string>
+    <string name="termAndCondition">Terms And Conditions</string>
+
+    <string name="firRegister">FIR REGISTER</string>
+    <string name="ncrRegister"> NCR REGISTER</string>
+    <!--missing person  register 1-->
+    <string name="name">Name</string>
+    <string name="nameHint">Full Name</string>
+
+    <string name="noofPerson">No of Person</string>
+    <string name="noofPersonHint">At Least One Person</string>
+
+    <string name="Alias">Alias</string>
+    <string name="alias_hint">Alternative Name</string>
+
+    <string name="relative">Relative Name</string>
+    <string name="relative_hint">Relative Name</string>
+
+    <string name="relation">Relation</string>
+
+    <string name="address">Address</string>
+    <string name="address_hint">Address Hint</string>
+
+    <string name="gender">Gender</string>
+
+    <string name="yearofbirth">Year of Birth</string>
+    <string name="ageRange">Age Range</string>
+    <string name="ageHint">(Please enter either year of birth (4 digit )or age range of missing person)</string>
+
+    <string name="heightfrom">Height From</string>
+    <string name="heightto">Height To</string>
+
+    <string name="weight">Weight</string>
+    <string name="weight_hint">Weight in kg</string>
+
+    <string name="bodyType">Body Type</string>
+    <string name="complexion">Complexion</string>
+
+    <!--missing person  register 2 Incident Details-->
+    <string name="incidentdetails">Incident details</string>
+    <string name="incidentdetails_hint">Incident details</string>
+
+    <string name="incidentplace">Incident Place</string>
+    <string name="incidentplace_hint">Details Of Place Last Seen</string>
+
+    <string name="dateofincident">Date Of Incident</string>
+    <string name="dateofincident_hint">Click To Get Calender</string>
+
+    <string name="timeofincident">Time Of Incident</string>
+    <string name="timeofincident_hint">Click To Get Clock</string>
+
+    <!--missing person  register 3  Details od police station-->
+    <string name="policestation">Police Station(if known)</string>
+    <string name="district">District</string>
+
+    <!--missing person  register 4  Missing Person Photo-->
+    <string name="missingpersonPhoto">Missing Person Photo(if available)</string>
+    <!--missing person  register 4  Informant Details-->
+    <string name="mobilenumber1">Mobile Number</string>
+    <string name="mobilenumber1Hinr">Mobile Number</string>
+    <string name="mobilenumber2">Mobile Number2/Landline Number</string>
+    <string name="mobilenumber2hint">Mobile Number2/Landline Number</string>
+    <string name="emailid">Email ID</string>
+    <string name="anyotherinfo">Any Other Information</string>
+    <string name="anyotherinfo_hint">Any Other Information</string>
+
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="feet">Feet</string>
+    <string name="inch">Inch</string>
+    <string name="cm">Cm</string>
+
+    <!-- missing person search-->
+    <string name="missingpersonsearch">Missing Person Search</string>
+    <string name="missingdate">Missing Date</string>
+
+    <string name="fathername">Father Name</string>
+    <string name="end">End</string>
+    <string name="height">Height(feet,inch,cm)</string>
+    <string name="state">State</string>
+    <string name="missingchildrensearch">Missing Children Search</string>
+    <string name="missingchildrendetails">Missing Children Details</string>
+    <string name="complainantName">Complainant Name</string>
+    <string name="complainantaddress">Complainant Address</string>
+    <string name="complainantemail">Complainant Email</string>
+    <string name="complainantfather_mother"> Father/Mother Name</string>
+    <string name="complainantmobilenumber"> Mobile Number</string>
+    <string name="dateoflost">Date of Lost</string>
+    <string name="timeoflost">Time of Lost</string>
+    <string name="timeoflost_hint">Time of Lost(if known)</string>
+    <string name="placeoflost">Place of Lost</string>
+    <string name="lostarticles">Lost Articles</string>
+    <string name="description">Description</string>
+    <string name="description_hint">Description(if any)</string>
+    <string name="submit">Submit</string>
+    <string name="foundarticles">Found Articles</string>
+    <string name="Filter">Filter</string>
+
+    <string name="group1">Overview</string>
+    <string name="group2">News Section</string>
+    <string name="group3">File Complaint</string>
+    <string-array name="group1">
+        <item>CriminalAlert helps you to file the complaint against crimes without going to police station.You can track your complaint with the help of this app</item>
+    </string-array>
+    <string-array name="group2">
+        <item>You can find all news regarding the specific topic in home section</item>
+    </string-array>
+    <string-array name="group3">
+        <item>You can file your complaint by clicking on the desired complaint section in nav-drawer</item>
+    </string-array>
+<string name="swipeleftright">Swipe left or right to see features</string>
+    <string name="complaittext"> You can file as many complaint regarding missing person,lost child,child labour etc as you want without any hindrances</string>
+    <string name="newstext">you can read daily news  related to every  Categories online on Criminial alert</string>
+    <string name="alertmessage">Recieved alert message of rate of crime of a particular state when you enter in that state</string>
+    <string name="adds">You can enjoy this app services without ads</string>
+    <string name="ratecrimegraph">show Rate of Crime with the help of graph</string>
 </resources>

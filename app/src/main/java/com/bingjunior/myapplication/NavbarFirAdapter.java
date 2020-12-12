@@ -1,4 +1,4 @@
-package com.student.crimnalalert;
+package com.bingjunior.myapplication;
 
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.student.crimnalalert.NCR_REGISTER.MissPersonReport;
+import com.bingjunior.myapplication.NCR_REGISTER.MissPersonReport;
 
 import java.util.ArrayList;
 

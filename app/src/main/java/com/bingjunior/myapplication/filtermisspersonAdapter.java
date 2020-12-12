@@ -1,4 +1,4 @@
-package com.student.crimnalalert;
+package com.bingjunior.myapplication;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
-import com.student.crimnalalert.Modal.filterMissPersonSearch;
+import com.bingjunior.myapplication.Modal.filterMissPersonSearch;
 
 public class filtermisspersonAdapter extends FirestoreRecyclerAdapter<filterMissPersonSearch,filtermisspersonAdapter.myviewholder> {
     private View view;

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.layout_PREMIUM">
+
+    <LinearLayout
+        android:background="@drawable/side_nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="You are using "
+            android:textColor="@color/whiteCardColor"
+            android:textSize="20sp"></TextView>
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Criminal Alert "
+            android:textColor="@color/whiteCardColor"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/whiteCardColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Upgrade to "
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Criminal alert Premium "
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+        <Button
+            android:id="@+id/viewfeatures"
+            android:textStyle="bold"
+            android:text="View Features"
+            android:padding="5dp"
+            android:textColor="@color/whiteCardColor"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/side_nav_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <Button
+            android:id="@+id/getpremium"
+            android:text="Get Premimum"
+            android:padding="5dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/premimum_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

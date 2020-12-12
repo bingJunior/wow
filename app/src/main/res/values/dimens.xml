@@ -16,4 +16,9 @@
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 
+    <dimen name="text_fragment">16sp</dimen>
+    <dimen name="textsizeform">16sp</dimen>
+    <dimen name="formlayoutwidth">280dp</dimen>
+
+
 </resources>

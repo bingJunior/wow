@@ -22,12 +22,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.bingjunior.myapplication.Fragment.layout_forgot;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.student.crimnalalert.MainActivity;
-import com.student.crimnalalert.R;
+import com.bingjunior.myapplication.MainActivity;
+import com.bingjunior.myapplication.R;
 
 public class layout_login extends Fragment {
     View view;
@@ -44,20 +45,20 @@ public class layout_login extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-       view=inflater.inflate(R.layout.activity_login,container,false);
+        view=inflater.inflate(R.layout.activity_login,container,false);
 
-       email=view.findViewById(R.id.et_loginemail);
-       password=view.findViewById(R.id.et_loginpassword);
-       forgotpassword=view.findViewById(R.id.tv_forgotpassword);
-       dont_have_an_account=view.findViewById(R.id.tv_dont_have_an_account);
-       login=view.findViewById(R.id.btn_login);
+        email=view.findViewById(R.id.et_loginemail);
+        password=view.findViewById(R.id.et_loginpassword);
+        forgotpassword=view.findViewById(R.id.tv_forgotpassword);
+        dont_have_an_account=view.findViewById(R.id.tv_dont_have_an_account);
+        login=view.findViewById(R.id.btn_login);
 
-       close=view.findViewById(R.id.btn_login_close);
+        close=view.findViewById(R.id.btn_login_close);
 
-       progressBar=view.findViewById(R.id.progressid);
+        progressBar=view.findViewById(R.id.progressid);
         frameLayout=getActivity().findViewById(R.id.mainframeid);
 
-        firebaseAuth= FirebaseAuth.getInstance();
+        firebaseAuth=FirebaseAuth.getInstance();
 
         return view;
     }
@@ -75,7 +76,7 @@ public class layout_login extends Fragment {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                  MainIntent();
+                                    MainIntent();
                                 }
                                 else {
                                     progressBar.setVisibility(view.INVISIBLE);
@@ -101,6 +102,7 @@ public class layout_login extends Fragment {
 
     private void MainIntent() {
         Intent mainintent=new Intent(getActivity(), MainActivity.class);
+        mainintent.putExtra("email",email.getText().toString());
         startActivity(mainintent);
         getActivity().finish();
     }
@@ -128,7 +130,7 @@ public class layout_login extends Fragment {
         dont_have_an_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setfragment(new layout_register());
+                setfragment(new com.bingjunior.myapplication.Fragment.layout_register());
             }
         });
         email.addTextChangedListener(new TextWatcher() {
@@ -183,7 +185,7 @@ public class layout_login extends Fragment {
         forgotpassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                setfragment(new com.student.crimnalalert.Fragment.layout_forgot());
+                setfragment(new layout_forgot());
             }
         });
 

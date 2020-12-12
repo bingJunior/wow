@@ -1,4 +1,4 @@
-package com.student.crimnalalert.NCR_REGISTER;
+package com.bingjunior.myapplication.NCR_REGISTER;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
@@ -7,9 +7,9 @@ import androidx.fragment.app.FragmentTransaction;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
-import com.student.crimnalalert.NCRfragment.foundarticle;
-import com.student.crimnalalert.NCRfragment.lostarticle;
-import com.student.crimnalalert.R;
+import com.bingjunior.myapplication.NCRfragment.foundarticle;
+import com.bingjunior.myapplication.NCRfragment.lostarticle;
+import com.bingjunior.myapplication.R;
 
 public class FoundArticle extends AppCompatActivity {
 private FrameLayout frameLayout;

@@ -7,6 +7,12 @@
     android:background="@color/background"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/fullmainid"-->
+<!--        android:layout_height="match_parent"-->
+<!--        tools:ignore="InvalidId">-->
+<!--    </FrameLayout>-->
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -18,23 +24,27 @@
         android:background="@color/background">
 
         <androidx.appcompat.widget.Toolbar
+            android:elevation="2dp"
+            android:theme="@style/TODO"
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="@drawable/background_border"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:titleTextColor="@color/color_desire_font"/>
+            app:titleTextColor="@color/color_desire_font">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/hamberid"
+                android:src="@drawable/ic_hamburger"
+                android:layout_height="wrap_content">
+            </androidx.appcompat.widget.AppCompatImageView>
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 
     <include layout="@layout/content_main" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

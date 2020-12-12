@@ -1,10 +1,10 @@
-package com.student.crimnalalert.NCR_REGISTER;
+package com.bingjunior.myapplication.NCR_REGISTER;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.student.crimnalalert.NCRfragment.misspersonregister1;
-import com.student.crimnalalert.R;
+import com.bingjunior.myapplication.NCRfragment.misspersonregister1;
+import com.bingjunior.myapplication.R;
 
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;

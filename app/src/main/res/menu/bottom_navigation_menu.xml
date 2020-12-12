@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottomaction_home_id"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/bottomaction_premimum_id"
+        android:orderInCategory="100"
+        android:title="Premimum"
+    android:icon="@drawable/ic_premimum"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/bottomaction_guide_id"
+        android:orderInCategory="100"
+        android:title="Guide"
+        android:icon="@drawable/ic_guide"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/bottomaction_profile_id"
+        android:orderInCategory="100"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        app:showAsAction="never" />
+
+
+</menu>

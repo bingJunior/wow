@@ -3,18 +3,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp_complaint_id">
         <item
-            android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
-        <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:id="@+id/complaintid"
+            android:title="Complaint"
+            >
+            <menu>
+                    <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/nav_fir_id"
+                            android:title="@string/fir" />
+                        <item
+                            android:id="@+id/nav_ncr_id"
+                            android:title="@string/ncr" />
+                    </group>
+
+            </menu>
+        </item>
     </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp_wanted_id">
+        <item android:title="Wanted"
+            android:icon="@drawable/ic_criminalrecord"
+            android:id="@+id/nav_wanted_id">
+        </item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp_viewreport_id">
+        <item android:title="View Report"
+            android:icon="@drawable/ic_criminalrecord"
+            android:id="@+id/nav_viewreport_id">
+        </item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp_criminalrate_id">
+        <item android:title="@string/criminalrate"
+            android:icon="@drawable/ic_criminalrecord"
+            android:id="@+id/nav_criminalrate_id">
+        </item>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp_feedback_id">
+        <item android:title="@string/feedback"
+            android:icon="@drawable/ic_feedback"
+            android:id="@+id/nav_feedback_id"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp_termAndCondition_id">
+        <item android:title="@string/termAndCondition"
+            android:icon="@drawable/ic_terms_and_conditions"
+            android:id="@+id/nav_termAndCondition_id"/>
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/grp_settingAndPrivacy_id">
+        <item android:title="@string/settingAndPrivacy"
+            android:icon="@drawable/ic_setting"
+            android:id="@+id/nav_settingAndPrivacy_id"/>
+    </group>
+
 </menu>

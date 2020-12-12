@@ -1,11 +1,14 @@
 package com.bingjunior.myapplication;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.SystemClock;
+import android.util.Log;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.bingjunior.myapplication.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -16,13 +19,13 @@ public class Splash_screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        firebaseAuth= FirebaseAuth.getInstance();
+        firebaseAuth=FirebaseAuth.getInstance();
 
         Handler handler=new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent registerintent=new Intent(com.student.crimnalalert.Splash_screen.this,Registeractivity.class);
+                Intent registerintent=new Intent(Splash_screen.this, com.bingjunior.myapplication.Registeractivity.class);
                 startActivity(registerintent);
                 finish();
 

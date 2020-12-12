@@ -1,4 +1,4 @@
-package com.student.crimnalalert;
+package com.bingjunior.myapplication;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -18,18 +18,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.student.crimnalalert.Fragment.Navbar_CRIMINALRATE;
-import com.student.crimnalalert.Fragment.Navbar_FEEDBACK;
-import com.student.crimnalalert.Fragment.Navbar_FIR;
-import com.student.crimnalalert.Fragment.Navbar_NCR;
-import com.student.crimnalalert.Fragment.Navbar_SETTINGPRIVACY;
-import com.student.crimnalalert.Fragment.Navbar_TERMSCONDTION;
-import com.student.crimnalalert.Fragment.Navbar_VIEWREPORT;
-import com.student.crimnalalert.Fragment.Navbar_WANTED;
-import com.student.crimnalalert.Fragment.layout_GUIDE;
-import com.student.crimnalalert.Fragment.layout_HOME;
-import com.student.crimnalalert.Fragment.layout_PREMIUM;
-import com.student.crimnalalert.Fragment.layout_PROFILE;
+import com.bingjunior.myapplication.Fragment.Navbar_CRIMINALRATE;
+import com.bingjunior.myapplication.Fragment.Navbar_FEEDBACK;
+import com.bingjunior.myapplication.Fragment.Navbar_FIR;
+import com.bingjunior.myapplication.Fragment.Navbar_NCR;
+import com.bingjunior.myapplication.Fragment.Navbar_SETTINGPRIVACY;
+import com.bingjunior.myapplication.Fragment.Navbar_TERMSCONDTION;
+import com.bingjunior.myapplication.Fragment.Navbar_VIEWREPORT;
+import com.bingjunior.myapplication.Fragment.Navbar_WANTED;
+import com.bingjunior.myapplication.Fragment.layout_GUIDE;
+import com.bingjunior.myapplication.Fragment.layout_HOME;
+import com.bingjunior.myapplication.Fragment.layout_PREMIUM;
+import com.bingjunior.myapplication.Fragment.layout_PROFILE;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;

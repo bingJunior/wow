@@ -1,4 +1,4 @@
-package com.student.crimnalalert;
+package com.bingjunior.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
         import androidx.core.content.ContextCompat;
@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class viewfeatures extends AppCompatActivity {
     private ViewPager mPager;
     private int Layouts[] = {R.layout.slide1, R.layout.slide2, R.layout.slide3, R.layout.slide4};
-    private mpagerAdapter mpagerAdapter;
+    private com.bingjunior.myapplication.mpagerAdapter mpagerAdapter;
     private LinearLayout dotslayout;
     private ImageView dots[];
     private int currentpage;

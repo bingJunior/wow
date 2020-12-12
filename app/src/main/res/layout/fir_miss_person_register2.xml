@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent">
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+
+                <TextView
+                    style="@style/headerText"
+                    android:layout_gravity="center"
+                    android:text="Incident Detail's"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    style="@style/loginCard"
+                    app:cardCornerRadius="10dp"
+                    android:elevation="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="@dimen/loginViewsMargin"
+                    android:background="@color/whiteCardColor"
+                    >
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="15dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_margin="5dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="@dimen/textsizeform"
+                                android:text="@string/incidentdetails"
+                                android:layout_weight="1"
+                                android:layout_width="@dimen/formlayoutwidth"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+                                android:maxLines="3"
+                                android:id="@+id/incidentdetails"
+                                android:textSize="@dimen/textsizeform"
+                                android:hint="@string/incidentdetails_hint"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="@dimen/textsizeform"
+                                android:text="@string/incidentplace"
+                                android:layout_weight="1"
+                                android:layout_width="@dimen/formlayoutwidth"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+                                android:maxLines="3"
+                                android:id="@+id/incidentplace"
+                                android:textSize="@dimen/textsizeform"
+                                android:hint="@string/incidentplace_hint"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="@dimen/textsizeform"
+                                android:text="@string/dateofincident"
+                                android:layout_weight="1"
+                                android:layout_width="@dimen/formlayoutwidth"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/incidentdate"
+                                android:drawableRight="@drawable/calender"
+                                android:textSize="@dimen/textsizeform"
+                                android:hint="@string/dateofincident_hint"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_margin="5dp"
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textSize="@dimen/textsizeform"
+                                android:text="@string/timeofincident"
+                                android:layout_weight="1"
+                                android:layout_width="@dimen/formlayoutwidth"
+                                android:layout_height="wrap_content">
+                            </TextView>
+                            <EditText
+                                android:id="@+id/incidenttime"
+                                android:drawableRight="@drawable/time"
+                                android:textSize="@dimen/textsizeform"
+                                android:hint="@string/timeofincident_hint"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            </EditText>
+                        </LinearLayout>
+                        <Button
+                            android:enabled="true"
+                            android:id="@+id/incidentnext"
+                            android:layout_width="wrap_content"
+                            android:background="@color/colorAccent"
+                            android:layout_gravity="end"
+                            android:textStyle="bold"
+                            android:text="Next"
+                            android:layout_height="wrap_content">
+                        </Button>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

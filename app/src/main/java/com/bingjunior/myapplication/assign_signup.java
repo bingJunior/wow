@@ -1,5 +1,10 @@
 package com.bingjunior.myapplication;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,11 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
+import com.bingjunior.myapplication.R;
 import com.google.api.Context;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -28,13 +29,13 @@ public class assign_signup extends AppCompatActivity {
     Button signin,read;
     FirebaseDatabase firebaseDatabase;
     private DatabaseReference reference1;
-    assign_userdatabasehelper helper;
+    com.bingjunior.myapplication.assign_userdatabasehelper helper;
     TextView gologin;
 
     RecyclerView recyclerView;
     RecyclerView.LayoutManager manager;
     Context context;
-    ArrayList<assign_userdatabasehelper> emailarray=new ArrayList<>();
+    ArrayList<com.bingjunior.myapplication.assign_userdatabasehelper> emailarray=new ArrayList<>();
 
 
     @Override
@@ -52,7 +53,7 @@ public class assign_signup extends AppCompatActivity {
         gologin=findViewById(R.id.go_login);
 
         recyclerView=findViewById(R.id.recycler);
-        manager=new LinearLayoutManager(com.student.crimnalalert.assign_signup.this, RecyclerView.VERTICAL,false);
+        manager=new LinearLayoutManager(assign_signup.this,RecyclerView.VERTICAL,false);
         recyclerView.setLayoutManager(manager);
 
 
@@ -75,7 +76,7 @@ public class assign_signup extends AppCompatActivity {
         gologin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(com.student.crimnalalert.assign_signup.this,assign_login.class);
+                Intent intent=new Intent(assign_signup.this,assign_login.class);
                 startActivity(intent);
                 finish();
             }
@@ -111,7 +112,7 @@ public class assign_signup extends AppCompatActivity {
 
             }
         });
-        assign_adapter assign_adapter=new assign_adapter(com.student.crimnalalert.assign_signup.this,emailarray);
+        assign_adapter assign_adapter=new assign_adapter(assign_signup.this,emailarray);
         recyclerView.setAdapter(assign_adapter);
 
     }

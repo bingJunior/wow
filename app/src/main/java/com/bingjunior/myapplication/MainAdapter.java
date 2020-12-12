@@ -1,4 +1,4 @@
-package com.student.crimnalalert.Fragment;
+package com.bingjunior.myapplication.Fragment;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import com.student.crimnalalert.R;
+import com.bingjunior.myapplication.R;
 
 import java.util.HashMap;
 import java.util.List;

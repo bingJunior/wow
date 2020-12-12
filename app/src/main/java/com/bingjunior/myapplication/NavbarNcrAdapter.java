@@ -1,4 +1,4 @@
-package com.student.crimnalalert;
+package com.bingjunior.myapplication;
 
 import android.app.Activity;
 import android.app.FragmentManager;
@@ -17,12 +17,12 @@ import androidx.cardview.widget.CardView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.student.crimnalalert.NCR_REGISTER.FoundArticle;
-import com.student.crimnalalert.NCR_REGISTER.LostArticle;
-import com.student.crimnalalert.NCR_REGISTER.MissPersonReport;
-import com.student.crimnalalert.NCR_REGISTER.MissingChildrenReport;
-import com.student.crimnalalert.NCR_REGISTER.MissingChildrenSearch;
-import com.student.crimnalalert.NCR_REGISTER.MissingPersonSearch;
+import com.bingjunior.myapplication.NCR_REGISTER.FoundArticle;
+import com.bingjunior.myapplication.NCR_REGISTER.LostArticle;
+import com.bingjunior.myapplication.NCR_REGISTER.MissPersonReport;
+import com.bingjunior.myapplication.NCR_REGISTER.MissingChildrenReport;
+import com.bingjunior.myapplication.NCR_REGISTER.MissingChildrenSearch;
+import com.bingjunior.myapplication.NCR_REGISTER.MissingPersonSearch;
 
 
 public class NavbarNcrAdapter extends  RecyclerView.Adapter<NavbarNcrAdapter.ViewHolder> {

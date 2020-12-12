@@ -1,4 +1,4 @@
-package com.student.crimnalalert;
+package com.bingjunior.myapplication;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
