@@ -1,4 +1,4 @@
-# <div align="center"> FIRMS</div>
+# <div align="center">CriminalAlert</div>
 
 ![Java](https://img.shields.io/badge/language-Java-blue?style=for-the-badge)
 ![Android](https://img.shields.io/badge/SDK-Android-green?style=for-the-badge)
@@ -6,7 +6,7 @@
 ![Database](https://img.shields.io/badge/database-Firestore-blue?style=for-the-badge)
 
 ## Introduction
-This is an android application , it will make policing much more easier. By the use of this app we can file any complaints regarding any crime without going to police station from the comfort of our home just with a single click of a button. This will help our police department to read the cases on the go even if they are off duty. It will be super helpful to register crime against women with ease. This application is called **FIRMS** (First Information Report Management System).
+This is an android application , it will make policing much more easier. By the use of this app we can file any complaints regarding any crime without going to police station from the comfort of our home just with a single click of a button. This will help our police department to read the cases on the go even if they are off duty. It will be super helpful to register crime with ease.
  
  
 # Contributors
